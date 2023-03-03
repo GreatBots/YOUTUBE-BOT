@@ -72,7 +72,7 @@ result_buttons = InlineKeyboardMarkup(
 HELP_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('📢 Channel', url='https://telegram.me/mYOwnBOTS'),
-        InlineKeyboardButton('⚙️ Support, url='https://telegram.me/Devschats')
+        InlineKeyboardButton('⚙️ Support', url='https://telegram.me/Devschats')
         ],[
         InlineKeyboardButton('⚡️ Home', callback_data='home'),
         InlineKeyboardButton('🤖 About', callback_data='about'),
