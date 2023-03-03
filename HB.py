@@ -12,14 +12,9 @@ HB = Client(
 )  
 
 START_TEXT = """**
-HI {}, 
-I AM A  ADVANCED YOUTUBE DOWNLOADER BOT
-I CAN DOWNLOAD YOUTUBE VIDEOS ,THUMBNAIL
-AND PLAYLIST VIDEOS....
-ONE OF THE SPPEDEST YOUTUBE BOT 
-I CAN DOWNLOAD 911mb VIDEOS
-IN 1min 
-MADE BY @TELSABOTS**"""
+**Hi {},** I am a Youtube Downloader Bot.
+I Can download youtube videos, thumbnail, playlist
+"""
 
 HELP_TEXT = """**
     YOUTUBE VIDEO
@@ -35,83 +30,74 @@ MADE BY @TELSABOTS**
 """
 
 ABOUT_TEXT = """
- 🤖<b>BOT :YOUTUBE DOWNLOADER </b>
- 
- 🧑🏼‍💻DEV🧑🏼‍💻: @ALLUADDICT
- 
- 📢<b>CHANNEL :</b>@TELSABOTS
- 
- 📝<b>Language :</b>  <a href='https://python.org/'>Python3</a>
- 
- 🧰<b>Frame Work :</b>  <a href='https://pyrogram.org/'>Pyrogram</a>
- 
- 🤩<b>SOURCE :</b>  <a href='https://youtu.be/xyW5fe0AkXo'>CLICK HERE</a>
- 
- 
+<b>📰 About Me</b>
+
+<b>Language:</b> Python 3
+
+<b>Framework:</b> Pyrogram
+
+<b>Channel:</b> @MyownBots
+
+<b>Group:</b> @DevsChats
+
+<b>Hosted On:</b> Heroku
+
+<b><i>Thanks For Using This Bot🤗</i></b>
+
+
 """
 
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
+        InlineKeyboardButton('📢 Channel', url='https://telegram.me/Myownbots'),
+        InlineKeyboardButton('⚙️ Support', url='https://telegram.me/devschats')
         ],[
-        InlineKeyboardButton('🆘HELP🆘', callback_data='help'),
-        InlineKeyboardButton('🤗ABOUT🤗', callback_data='about'),
-        InlineKeyboardButton('🔐CLOSE🔐', callback_data='close')
+        InlineKeyboardButton('❓️ Help', callback_data='help'),
+        InlineKeyboardButton('🤖 About', callback_data='about')
+        ],[
+        InlineKeyboardButton('Close 🗑', callback_data='close')
         ]]
     )
 
 
 result_buttons = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
+        InlineKeyboardButton('📢 Channel', url='https://telegram.me/myownbots'),
+        InlineKeyboardButton('⚙️ Support', url='https://telegram.me/devschats)
         ],[
-        InlineKeyboardButton('🔐CLOSE🔐', callback_data='close')
+        InlineKeyboardButton('Close 🗑', callback_data='close')
         ]]
     )
 HELP_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
+        InlineKeyboardButton('📢 Channel', url='https://telegram.me/mYOwnBOTS'),
+        InlineKeyboardButton('⚙️ Support, url='https://telegram.me/Devschats')
         ],[
-        InlineKeyboardButton('🏡HOME🏡', callback_data='home'),
-        InlineKeyboardButton('🤗ABOUT🤗', callback_data='about'),
-        InlineKeyboardButton('🔐CLOSE🔐', callback_data='close')
+        InlineKeyboardButton('⚡️ Home', callback_data='home'),
+        InlineKeyboardButton('🤖 About', callback_data='about'),
+        InlineKeyboardButton('Close 🗑', callback_data='close')
         ]]
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
+        InlineKeyboardButton('📢 Channel', url='https://telegram.me/TELSABOTS'),
+        InlineKeyboardButton('⚙️ Support, url='https://telegram.me/alluaddict')
         ],[
-        InlineKeyboardButton('🏡HOME🏡', callback_data='home'),
-        InlineKeyboardButton('🆘HELP🆘', callback_data='help'),
-        InlineKeyboardButton('🔐CLOSE🔐', callback_data='close')
-        ]]
-    )
-
-SOURCE_TEXT = """<b>PRESS SOURCE BUTTON \n WATCH MY VIDEO AND\nCHECK DESCRIPTION FOR SOURCE CODE</b>"""
-SOURCE_BUTTONS = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton('✅SOURCE✅', url='https://youtu.be/xyW5fe0AkXo'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
+        InlineKeyboardButton('⚡️ Home', callback_data='home'),
+        InlineKeyboardButton('❓️ Help', callback_data='help')
         ],[
-        InlineKeyboardButton('🔐CLOSE🔐', callback_data='close')
+        InlineKeyboardButton('Close 🗑', callback_data='close')
         ]]
     )
 
 result_buttons = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
-        ],[
-        InlineKeyboardButton('🔐CLOSE🔐', callback_data='close')
+        InlineKeyboardButton('Close 🗑', callback_data='close')
         ]]
     )
 
-result_text = """**JOIN @TELSABOTS**"""
+result_text = """**Thanks For Using Me🤗**"""
 
 @HB.on_message(filters.command(["start"]))
 async def start(bot, update):
@@ -137,15 +123,6 @@ async def help_message(bot, update):
 async def about_message(bot, update):
     text = ABOUT_TEXT
     reply_markup = ABOUT_BUTTONS
-    await update.reply_text(
-        text=text,
-        disable_web_page_preview=True,
-        reply_markup=reply_markup
-    )
-@HB.on_message(filters.command(["source"]))
-async def about_message(bot, update):
-    text = SOURCE_TEXT
-    reply_markup = SOURCE_BUTTONS
     await update.reply_text(
         text=text,
         disable_web_page_preview=True,
@@ -181,7 +158,7 @@ async def progress_for_pyrogram(
             ''.join(["▱" for i in range(10 - math.floor(percentage / 10))]),
             round(percentage, 2))
 
-        tmp = progress + "<b>✅ COMPLETED :</b> {0}\n<b>📂 SIZE :</b> {1}\n<b>⚡️ SPEED :</b> {2}/s\n<b>⏰ ETA :</b> {3}\n".format(
+        tmp = progress + "<b>✅ Completed :</b> {0}\n<b>📂 Size :</b> {1}\n<b>⚡️ Speed :</b> {2}/s\n<b>⏰ Eta :</b> {3}\n".format(
             humanbytes(current),
             humanbytes(total),
             humanbytes(speed),
@@ -234,7 +211,7 @@ def TimeFormatter(milliseconds: int) -> str:
         ((str(milliseconds) + "ms, ") if milliseconds else "")
     return tmp[:-2]
 
-UPLOAD_START = " <bold>Upload STARTED...</bold>"
+UPLOAD_START = " <bold>Upload Started...</bold>"
 
 
 from pytube import YouTube
@@ -274,13 +251,13 @@ async def ytdl(_, message):
     ],[
         InlineKeyboardButton('🎧 AUDIO '+  '⭕️ ' +  audio_size , callback_data='audio')
     ],[
-        InlineKeyboardButton('🖼THUMBNAIL🖼', callback_data='thumbnail')
+        InlineKeyboardButton('🖼 Thumbnail', callback_data='thumbnail')
     ]]
    )
    
    await message.reply_photo(
             photo=thumb,
-            caption="🎬 TITLE : "+ yt.title +  "\n\n📤 UPLOADED : " + yt.author  + "\n\n📢 CHANNEL LINK " + f'https://www.youtube.com/channel/{yt.channel_id}',
+            caption="🎬 Title : "+ yt.title +  "\n\n📤 Uploaded : " + yt.author  + "\n\n📢 Channel link " + f'https://www.youtube.com/channel/{yt.channel_id}',
             reply_markup=result_buttons2,
             quote=True,
     
@@ -393,7 +370,7 @@ async def ytdl(_, update):
     
     await  HB.send_video(
             chat_id = update.chat.id, 
-            caption=(f"⭕️ PLAYLIST : "+ pyt.title + "\n📥 DOWNLOADED " + "\n✅ JOIN @TELSABOTS" ),
+            caption=(f"⭕️ Playlist : "+ pyt.title + "\n📥 Download " + "\n✅ Join @myownbots" ),
             video = phd.download(),
             
         )
