@@ -11,22 +11,20 @@ HB = Client(
     api_hash = os.environ["API_HASH"]
 )  
 
-START_TEXT = """**
+START_TEXT = """
 **Hi {},** I am a Youtube Downloader Bot.
-I Can download youtube videos, thumbnail, playlist
+I Can download youtube videos, thumbnail, playlist.
+
+For More Click On **Help**.
 """
 
-HELP_TEXT = """**
-    YOUTUBE VIDEO
-SENT ANY URL .......
-THEN SELECT AVAILABLE QUALITY
+HELP_TEXT = """
+**Need Help❓️**
 
-    PLAYLIST
-SENT ANY URL .....
-THEN WAIT BOT WILL SENT
-VIDEOS IN HIGH QUALITY...
+**>** For YouTube Videos, SENT YouTube video then one of options you want, Then Bot Will Upload It.
+**>** For Playlist, Sent url and wait for some time then you will get the videos.
 
-MADE BY @TELSABOTS**
+__For More Go To @DevsChats__
 """
 
 ABOUT_TEXT = """
@@ -71,19 +69,14 @@ result_buttons = InlineKeyboardMarkup(
     )
 HELP_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📢 Channel', url='https://telegram.me/mYOwnBOTS'),
-        InlineKeyboardButton('⚙️ Support', url='https://telegram.me/Devschats')
-        ],[
         InlineKeyboardButton('⚡️ Home', callback_data='home'),
         InlineKeyboardButton('🤖 About', callback_data='about'),
+        ],[
         InlineKeyboardButton('Close 🗑', callback_data='close')
         ]]
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📢 Channel', url='https://telegram.me/myownbots'),
-        InlineKeyboardButton('⚙️ Support', url='https://telegram.me/devschats')
-        ],[
         InlineKeyboardButton('⚡️ Home', callback_data='home'),
         InlineKeyboardButton('❓️ Help', callback_data='help')
         ],[
