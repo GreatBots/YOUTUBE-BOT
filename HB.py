@@ -64,7 +64,7 @@ START_BUTTONS = InlineKeyboardMarkup(
 result_buttons = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('📢 Channel', url='https://telegram.me/myownbots'),
-        InlineKeyboardButton('⚙️ Support', url='https://telegram.me/devschats)
+        InlineKeyboardButton('⚙️ Support', url='https://telegram.me/devschats')
         ],[
         InlineKeyboardButton('Close 🗑', callback_data='close')
         ]]
@@ -81,8 +81,8 @@ HELP_BUTTONS = InlineKeyboardMarkup(
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📢 Channel', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('⚙️ Support, url='https://telegram.me/alluaddict')
+        InlineKeyboardButton('📢 Channel', url='https://telegram.me/myownbots'),
+        InlineKeyboardButton('⚙️ Support, url='https://telegram.me/devschats)
         ],[
         InlineKeyboardButton('⚡️ Home', callback_data='home'),
         InlineKeyboardButton('❓️ Help', callback_data='help')
